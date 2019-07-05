@@ -1,0 +1,81 @@
+{
+    "circuit_id": "100",
+    "external_identifier": null,
+    "name": "I2-POPA-POPC-VLAN-000000",
+    "description": "PerfAssurance: popa-to-popc via 2568",
+    "state": "active",
+    "provision_time": "",
+    "remove_time": "",
+    "remote_requester": null,
+    "remote_url": null,
+    "user_id": "10",
+    "workgroup_id": "1",
+    "created_by": {
+        "is_admin": 1,
+        "user_id": 10,
+        "username": "test",
+        "email": "test@localhost"
+    },
+    "created_on": "07/26/2017 10:35:27",
+    "created_on_epoch": "1501065327",
+    "last_modified_by": {
+        "is_admin": 1,
+        "user_id": 10,
+        "username": "test",
+        "email": "test@localhost"
+    },
+    "last_modified_on": "07/26/2017 10:35:27",
+    "last_modified_on_epoch": "1501065327",
+    "endpoints": [
+        {
+            "bandwidth": null,
+            "circuit_ep_id": "100",
+            "circuit_id": "100",
+            "cloud_account_id": null,
+            "cloud_connection_id": null,
+            "cloud_interconnect_type": null,
+            "description": "pas-tst.popa, em1",
+            "entity": null,
+            "entity_id": null,
+            "inner_tag": null,
+            "interface": "xe-5/0/0",
+            "interface_id": "100",
+            "jumbo": 1,
+            "mtu": "9000",
+            "node": "rtsw.popa.net.test.edu",
+            "node_id": "100",
+            "start_epoch": null,
+            "tag": "2568",
+            "type": "circuit",
+            "unit": "2568"
+        },
+        ...
+    ],    
+    "paths": [
+        {
+            "circuit_id": "100",
+            "path_id": "100",
+            "mpls_type": "strict",
+            "type": "primary",
+            "state": "active",
+            "links": [
+                {
+                    "interface_a_id": "1001",
+                    "interface_z_id": "1002",
+                    "ip_a": "192.168.70.70",
+                    "ip_z": "192.168.70.71",
+                    "link_id": "100",
+                    "metric": "564",
+                    "name": "I2-POPA-POPB-100GE-07755",
+                    "node_a_id": "100",
+                    "node_a_loopback": "10.57.30.1",
+                    "node_z_id": "200",
+                    "node_z_loopback": "10.57.28.248",
+                    "remote_urn": null,
+                    "status": "up"
+                },
+                ...
+            ]
+        }
+    ]
+}
